@@ -28,3 +28,17 @@ function calcularMedia(notas) {
 }
 
 console.log("A média das notas deste aluno é: ", calcularMedia(alunos[0].notas))
+
+let media = calcularMedia(alunos[2].notas)
+
+function situacao(media) {
+    if (media >= 6) {
+      return "APROVADO";
+    } else if (media >= 4) {
+      return "RECUPERACAO";
+    } else {
+      return "REPROVADO";
+    }
+  }
+
+  console.log(situacao(media))
